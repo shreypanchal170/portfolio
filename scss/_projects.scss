@@ -1,0 +1,162 @@
+/* Projects Area css
+============================================================================================ */
+.projects_area{
+	
+}
+.projects_fillter{
+	.filter{
+		text-align: right;
+		margin-top: 50px;
+		li{
+			display: inline-block;
+			margin-right: 26px;
+			a{
+				font-size: 13px;
+				font-family: $rob;
+				color: $pfont;
+			}
+			&:last-child{
+				margin-right: 0px;
+			}
+			&.active{
+				a{
+					color: $baseColor;
+				}
+			}
+		}
+	}
+}
+.projects_inner{
+	margin-bottom: -30px;
+}
+.projects_item{
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	&:before{
+		content: "";
+		background: rgba(255, 255, 255, .80);
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: all 300ms ease;
+	}
+	.projects_text{
+		position: absolute;
+		left: 0px;
+		bottom: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+		h4{
+			font-size: 20px;
+			font-family: $rob;
+			font-weight: 500;
+			color: $dip;
+			margin-bottom: 5px;
+			@include transition;
+			cursor: pointer;
+		}
+		p{
+			margin-bottom: 0px;
+			font-size: 14px;
+		}
+	}
+	&:hover{
+		&:before{
+			opacity: 1;
+		}
+		.projects_text{
+			h4{
+				color: $baseColor;
+			}
+		}
+	}
+}
+/* End Projects Area css
+============================================================================================ */
+
+/* Projects Know Area css
+============================================================================================ */
+.project_know_area{
+	background: url(../img/details-img.jpg) no-repeat scroll center center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	.project_know_inner{
+		max-width: 780px;
+		margin: auto;
+		h3{
+			font-size: 36px;
+			line-height: 45px;
+			font-family: $rob;
+			font-weight: bold;
+		}
+		p{
+			font-size: 14px;
+			line-height: 24px;
+			margin-bottom: 32px;
+		}
+		.main_btn{
+			box-shadow: none;
+		}
+	}
+}
+/* End Projects Know Area css
+============================================================================================ */
+
+
+/* Portfolio Details Area css
+============================================================================================ */
+.portfolio_details_area{
+	
+}
+.portfolio_details_inner{
+	.row{
+		margin-bottom: 65px;
+	}
+	p{
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+	.portfolio_right_text{
+		padding-left: 98px;
+		h4{
+			color: $dip;
+			font-size: 24px;
+			margin-bottom: 18px;
+		}
+		p{
+			margin-bottom: 25px;	
+		}
+		.list{
+			li{
+				margin-bottom: 7px;
+				span{
+					font-size: 14px;
+					color: $dip;
+					font-weight: 500;
+					width: 97px;
+					display: inline-block;
+				}
+				color: $pfont;
+				font-weight: normal;
+				font-size: 14px;
+				&:last-child{
+					margin-bottom: 0px;
+				}
+				i{
+					color: #f1cd09;
+				}
+			}
+		}
+	}
+}
+
+/* End Portfolio Details Area css
+============================================================================================ */

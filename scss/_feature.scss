@@ -1,0 +1,161 @@
+/* Feature Area css
+============================================================================================ */
+.feature_area{
+	
+}
+.feature_inner{
+	margin-bottom: -30px;
+}
+.feature_item{
+	border-radius: 10px;
+	border: 1px solid #eeeeee;
+	padding: 50px 35px;
+	@include transition;
+	margin-bottom: 30px;
+	h4{
+		color: $dip;
+		margin-bottom: 0px;
+		img{
+			padding-right: 20px;
+			position: relative;
+			top: -5px;
+		}
+	}
+	p{
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
+	&:hover{
+		border-color: #fff;
+		box-shadow: 0px 5px 30px 0px rgba(153, 153, 153, 0.1);
+	}
+}
+/* End Project Details Area css
+============================================================================================ */
+
+
+/* End Process Area css
+============================================================================================ */
+.process_area{
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	.left_side{
+		max-width: 50%;
+		flex: 0 0 50%;
+		vertical-align: middle;
+		align-self: center;
+		.process_inner{
+			max-width: 555px;
+			float: right;
+		}
+	}
+	.right_side{
+		max-width: 50%;
+		flex: 0 0 50%;
+		img{
+			margin-left: -175px;
+		}
+	}
+}
+.process_inner{
+	background: #fff;
+	z-index: 2;
+	position: relative;
+	border-radius: 5px;
+	padding: 70px 45px; 
+	overflow: hidden;
+	box-shadow: 0px 5px 30px 0px rgba(153, 153, 153, 0.1);
+	max-width: 555px;
+	width: 100%;
+	h4{
+		font-size: 36px;
+		font-weight: bold;
+		color: $dip;
+		margin-bottom: 25px;
+	}
+	.card{
+		border: none;
+		display: block;
+		max-width: 465px;
+		width: 100%;
+		.card-header{
+			padding: 0px;
+			background: transparent;
+			border: none;
+			button{
+				border-bottom: 1px solid $baseColor;
+				display: block;
+				padding: 10px 0px;
+				border-radius: 0px;
+				width: 100%;
+				text-align: left;
+				font-size: 20px;
+				color: $dip;
+				font-weight: 500;
+				font-family: $rob;
+				text-decoration: none;
+				white-space: normal;
+				cursor: pointer;
+				i{
+					float: right;
+					display: none;
+					font-weight: 500;
+					position: relative;
+					top: 8px;
+					& + i{
+						display: inline-block;
+					}
+				}
+				&.collapsed{
+					border-bottom-color: #ddd;
+					i{
+						display: inline-block;
+						& + i{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.card-body{
+			padding-left: 0px;
+			padding-right: 0px;
+			font-size: 14px;
+			line-height: 24px;
+			padding-bottom: 5px;
+		}
+	}
+}
+/* End Process Area css
+============================================================================================ */
+
+/* Serve Area css
+============================================================================================ */
+.serve_area{
+	.col-lg-6{
+		vertical-align: middle;
+		align-self: center;
+	}
+}
+.serve_inner{
+	.serve_text{
+		padding-left: 65px;
+		h4{
+			color: $dip;
+			font-size: 36px;
+			font-weight: bold;
+			line-height: 45px;
+			margin-bottom: 15px;
+		}
+		p{
+			font-size: 14px;
+			line-height: 24px;
+			margin-bottom: 0px;
+		}
+	}
+}
+/* End serve_area Area css
+============================================================================================ */
+
+

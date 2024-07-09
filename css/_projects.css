@@ -1,0 +1,14 @@
+/* Projects Area css
+============================================================================================ */
+.projects_fillter .filter {
+  text-align: right;
+}
+
+.projects_fillter .filter li {
+  display: inline-block;
+}
+
+/* End Projects Area css
+============================================================================================ */
+
+/*# sourceMappingURL=_projects.css.map */

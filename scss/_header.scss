@@ -1,0 +1,305 @@
+//header_area css
+.header_area{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left:0;
+    z-index: 99;
+    transition: background 0.4s, all 0.3s linear;
+    .navbar{
+        background: transparent;
+        padding: 0px;
+        border: 0px;
+        border-radius: 0px;
+        .nav{
+            .nav-item{
+				margin-right: 45px;
+                .nav-link{
+                    font: 500 13px/100px $rob;
+                    text-transform: uppercase;
+                    color: $dip;
+                    padding: 0px;
+                    display: inline-block;
+                    &:after{
+                        display: none;
+                    }
+                }
+                &:hover, &.active{
+                    .nav-link{
+                        color: $baseColor;
+                    }
+                }
+                &.submenu{
+                    position: relative;
+                    ul{
+                        border: none;
+                        padding: 0px;
+                        border-radius: 0px;
+                        box-shadow: none;
+                        margin: 0px;
+                        background: #fff;
+						box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+                        @media (min-width: 992px){
+                            position: absolute;
+                            top: 120%;
+                            left: 0px;
+                            min-width: 200px;
+                            text-align: left;
+                            opacity: 0;
+                            transition: all 300ms ease-in;
+                            visibility: hidden;
+                            display: block;
+                            border: none;
+                            padding: 0px;
+                            border-radius: 0px;
+                        }
+                        &:before{
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 10px 10px 0 10px;
+                            border-color: #eeeeee transparent transparent transparent;
+                            position: absolute;
+                            right: 24px;
+                            top: 45px;
+                            z-index: 3;
+                            opacity: 0;
+                            transition: all 400ms linear;
+                        }
+                        .nav-item{
+                            display: block;
+                            float: none;
+                            margin-right: 0px;
+                            border-bottom: 1px solid #ededed;
+                            margin-left: 0px;
+                            transition: all 0.4s linear;
+                            .nav-link{
+                                line-height: 45px;
+                                color: $dip;
+                                padding: 0px 30px;
+                                transition: all 150ms linear;
+                                display: block;
+                                margin-right: 0px;
+                            }
+                            &:last-child{
+                                border-bottom: none;
+                            }
+                            &:hover{
+                                .nav-link{
+                                    background: $baseColor;
+                                    color: #fff;
+                                }
+                            }    
+                        }
+                    }
+                    &:hover{
+                        ul{
+                            @media (min-width: 992px){
+                                visibility: visible;
+                                opacity: 1;
+                                top: 100%;
+                            }
+                            .nav-item{
+                                margin-top: 0px;
+                            }
+                        }
+                    }
+                }
+				&:last-child{
+					margin-right: 0px;
+				}
+            }
+        }
+        .search{
+            font-size: 12px;
+            line-height: 60px;
+            display: inline-block;
+            color: $dip;
+            margin-left: 220px;
+            i{
+                font-weight: 600;
+            }
+        }
+    }
+	& + section, & + row, & + div{
+		margin-top: 100px;
+	}
+	&.navbar_fixed{
+		.main_menu{
+			position: fixed;
+			width: 100%;
+			top: -70px;
+			left: 0;
+			right: 0;
+			background: #fff;  
+			transform: translateY(70px);
+			transition: transform 500ms ease, background 500ms ease;
+			-webkit-transition: transform 500ms ease, background 500ms ease;
+			box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+			.navbar{
+				.nav{
+					.nav-item{
+						.nav-link{
+							line-height: 70px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.top_menu{
+	background: #ec9d5f;
+	.float-left{
+		a{
+			line-height: 40px;
+			display: inline-block;
+			color: #fff;
+			font-family: $rob;
+			text-transform: uppercase;
+			font-size: 12px;
+			margin-right: 50px;
+			@include transition;
+			&:last-child{
+				margin-right: 0px;
+			}
+			&:hover{
+				color: $baseColor;
+			}
+		}
+	}
+	.float-right{
+		.pur_btn{
+			background: $baseColor;
+			color: #fff;
+			font-family: $rob;
+			line-height: 40px;
+			display: block;
+			padding: 0px 40px;
+			font-weight: 500;
+			font-size: 12px;
+		}
+	}
+}
+
+
+/* Home Banner Area css
+============================================================================================ */
+.home_banner_area{
+	position: relative;
+}
+.side_menu{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 100%;
+	background: #fff;
+	width: 100%;
+	max-width: 300px;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	.logo{
+		padding-top: 45px;
+		display: block;
+		padding-bottom: 45px;
+	}
+	.input-group{
+		display: block;
+		position: relative;
+		input{
+			width: 100%;
+			border: none;
+			border-radius: 0px;
+			height: 40px;
+			padding: 0px 28px 0px 15px;
+			background: $baseColor;
+			line-height: 40px;
+			font-size: 12px;
+			color: #fff;
+			font-family: $rob;
+			outline: none;
+			box-shadow: none;
+			@include placeholder{
+				font-size: 12px;
+				color: #fff;
+				font-family: $rob;
+			}
+		}
+		.input-group-append{
+			position: absolute;
+			right: 10px;
+			top: 47%;
+			transform: translateY(-50%);
+			z-index: 4;
+			.btn-outline-secondary{
+				border: none;
+				border-radius: 0px;
+				color: #fff;
+				padding: 0px;
+			}
+		}
+	}
+	.menu_right{
+		margin-top: 105px;
+		max-height: 310px;
+		overflow-y: scroll;
+		li{
+			margin-bottom: 30px;
+			&:last-child{
+				margin-bottom: 0px;
+			}
+			a{
+				font-size: 13px;
+				font-family: $rob;
+				font-weight: 500;
+				color: $dip;
+				text-transform: uppercase;
+			}
+			ul{
+				display: none;
+				li{
+					a{
+						color: $dip;
+					}
+					&:first-child{
+						margin-top: 30px;
+					}
+					&:hover{
+						a{
+							color: $dip;
+						}
+					}
+				}
+			}
+		}
+	}
+	.social{
+		position: absolute;
+		bottom: 40px;
+		left: 0px;
+		width: 100%;
+		text-align: center;
+		li{
+			display: inline-block;
+			margin-right: 15px;
+			&:last-child{
+				margin-right: 0px;
+			}
+			a{
+				font-size: 16px;
+				color: #dddddd;
+			}
+			&:hover{
+				a{
+					color: $baseColor;
+				}
+			}
+		}
+	}
+}
+/* Home Banner Area css
+============================================================================================ */

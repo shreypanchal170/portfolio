@@ -1,0 +1,71 @@
+/* Team Area css
+============================================================================================ */
+.team_area{
+}
+.team_inner{
+	
+}
+.team_item{
+	position: relative;
+	text-align: center;
+	.team_img{
+		position: relative;
+		overflow: hidden;
+		.hover{
+			position: absolute;
+			left: 0px;
+			width: 100%;
+			bottom: -70px;
+			text-align: center;
+			@include transition;
+			background: #fff;
+			a{
+				font-size: 14px;
+				color: #dddddd;
+				margin-right: 20px;
+				line-height: 50px;
+				&:last-child{
+					margin-right: 0px;
+				}
+				&:hover{
+					color: $baseColor;
+				}
+			}
+		}
+	}
+	.team_name{
+		text-align: center;
+		margin-top: 20px;
+		h4{
+			margin-bottom: 5px;
+			color: $dip;
+			font-family: $rob;
+			font-weight: 500;
+			font-size: 20px;
+			@include transition;
+		}
+		p{
+			font-size: 14px;
+			font-family: $rob;
+			color: $pfont;
+			margin-bottom: 0px;
+		}
+	}
+	&:hover{
+		.team_img{
+			&:before{
+				opacity: 1;
+			}
+			.hover{
+				bottom: 0px;
+			}
+		}
+		.team_name{
+			h4{
+				color: $baseColor;
+			}
+		}
+	}
+}
+/* End Team Area css
+============================================================================================ */

@@ -1,0 +1,41 @@
+/* Testimonials Area css
+============================================================================================ */
+.testimonials_area{
+	background: #f9f9ff;
+}
+.testi_inner{
+	.col-lg-3{
+		vertical-align: middle;
+		align-self: center;
+	}
+}
+.test_title{
+	h2{
+		color: $dip;
+		font-size: 36px;
+		font-family: $rob;
+		font-weight: bold;
+		margin-bottom: 12px;
+	}
+	p{
+		margin-bottom: 0px;
+	}
+}
+.testi_item{
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+	background: #fff;
+	padding: 40px 28px;
+	p{
+		font-style: italic;
+	}
+	h4{
+		color: $dip;
+		font-size: 20px;
+	}
+	a{
+		color: #ffc000;
+	}
+}
+/* End Testimonials Area css
+============================================================================================ */
